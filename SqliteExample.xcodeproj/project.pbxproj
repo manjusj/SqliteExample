@@ -14,6 +14,9 @@
 		9BF5F6BC1CEDBAD2004E49DB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BF5F6BB1CEDBAD2004E49DB /* Images.xcassets */; };
 		9BF5F6BF1CEDBAD2004E49DB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BF5F6BD1CEDBAD2004E49DB /* LaunchScreen.xib */; };
 		9BF5F6CB1CEDBAD2004E49DB /* SqliteExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF5F6CA1CEDBAD2004E49DB /* SqliteExampleTests.m */; };
+		9BF5F6D51CEDBBCA004E49DB /* mydatabase.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 9BF5F6D41CEDBBCA004E49DB /* mydatabase.sqlite */; };
+		9BF5F6D71CEDBD7F004E49DB /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BF5F6D61CEDBD7F004E49DB /* libsqlite3.dylib */; };
+		9BF5F6DA1CEDC077004E49DB /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF5F6D91CEDC077004E49DB /* DBManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,10 @@
 		9BF5F6C41CEDBAD2004E49DB /* SqliteExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SqliteExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BF5F6C91CEDBAD2004E49DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BF5F6CA1CEDBAD2004E49DB /* SqliteExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SqliteExampleTests.m; sourceTree = "<group>"; };
+		9BF5F6D41CEDBBCA004E49DB /* mydatabase.sqlite */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mydatabase.sqlite; sourceTree = "<group>"; };
+		9BF5F6D61CEDBD7F004E49DB /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		9BF5F6D81CEDC077004E49DB /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		9BF5F6D91CEDC077004E49DB /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BF5F6D71CEDBD7F004E49DB /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +71,7 @@
 		9BF5F6A21CEDBAD1004E49DB = {
 			isa = PBXGroup;
 			children = (
+				9BF5F6D61CEDBD7F004E49DB /* libsqlite3.dylib */,
 				9BF5F6AD1CEDBAD1004E49DB /* SqliteExample */,
 				9BF5F6C71CEDBAD2004E49DB /* SqliteExampleTests */,
 				9BF5F6AC1CEDBAD1004E49DB /* Products */,
@@ -81,6 +90,7 @@
 		9BF5F6AD1CEDBAD1004E49DB /* SqliteExample */ = {
 			isa = PBXGroup;
 			children = (
+				9BF5F6D41CEDBBCA004E49DB /* mydatabase.sqlite */,
 				9BF5F6B21CEDBAD1004E49DB /* AppDelegate.h */,
 				9BF5F6B31CEDBAD1004E49DB /* AppDelegate.m */,
 				9BF5F6B51CEDBAD1004E49DB /* ViewController.h */,
@@ -89,6 +99,8 @@
 				9BF5F6BB1CEDBAD2004E49DB /* Images.xcassets */,
 				9BF5F6BD1CEDBAD2004E49DB /* LaunchScreen.xib */,
 				9BF5F6AE1CEDBAD1004E49DB /* Supporting Files */,
+				9BF5F6D81CEDC077004E49DB /* DBManager.h */,
+				9BF5F6D91CEDC077004E49DB /* DBManager.m */,
 			);
 			path = SqliteExample;
 			sourceTree = "<group>";
@@ -199,6 +211,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BF5F6D51CEDBBCA004E49DB /* mydatabase.sqlite in Resources */,
 				9BF5F6BA1CEDBAD2004E49DB /* Main.storyboard in Resources */,
 				9BF5F6BF1CEDBAD2004E49DB /* LaunchScreen.xib in Resources */,
 				9BF5F6BC1CEDBAD2004E49DB /* Images.xcassets in Resources */,
@@ -222,6 +235,7 @@
 				9BF5F6B71CEDBAD1004E49DB /* ViewController.m in Sources */,
 				9BF5F6B41CEDBAD1004E49DB /* AppDelegate.m in Sources */,
 				9BF5F6B11CEDBAD1004E49DB /* main.m in Sources */,
+				9BF5F6DA1CEDC077004E49DB /* DBManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
